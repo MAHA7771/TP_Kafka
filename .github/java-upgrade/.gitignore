@@ -1,0 +1,5 @@
+target/
+classes/
+*.jar
+.idea/
+*.log
