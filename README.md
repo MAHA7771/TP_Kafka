@@ -71,14 +71,4 @@ Arrêt brutal d’un consumer → messages rejoués après rebalance
 Surveillance du lag :
 kafka-consumer-groups.bat --describe --group ca-1 --bootstrap-server localhost:9092
 
-PARTIE 4 — Producer / Consumer Java (Kafka API)
-Compilation du projet
-mvn clean compile
-Exécution du Producer
-mvn exec:java -Dexec.mainClass="tn.utm.kafka.SimpleProducer"
-Exécution du Consumer
-mvn exec:java -Dexec.mainClass="tn.utm.kafka.SimpleConsumer"
-Fonctionnement
-Producer envoie des messages vers le topic ventes
-Consumer lit les messages via un consumer group
-Les offsets sont commit manuellement après traitement
+
