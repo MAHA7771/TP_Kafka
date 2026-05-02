@@ -55,18 +55,18 @@ mvn exec:java -Dexec.mainClass="com.example.pos.DetecteurAnomalies"
 
 ## Étapes de test
 
-### Étape 12
+### Étape 1
 1 simulateur + 1 ChiffreAffaires + 1 DetecteurAnomalies
 
-### Étape 13
+### Étape 2
 2 simulateurs en parallèle
 
-### Étape 14
+### Étape 3
 3 instances de ChiffreAffaires (rebalance Kafka)
 
-### Étape 15
+### Étape 4
 Arrêt brutal d’un consumer → messages rejoués après rebalance
 
-### Étape 16
+### Étape 5
 Surveillance du lag :
 kafka-consumer-groups.bat --describe --group ca-1 --bootstrap-server localhost:9092
